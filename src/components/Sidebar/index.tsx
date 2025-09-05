@@ -5,10 +5,9 @@ import CloseIcon from "./CloseIcon";
 import { NavLink } from "react-router-dom";
 const navLinks = [
   { label: "Home", path: "/" },
-  // { label: "Stock List", path: "/stocks" },
-  // { label: "Favorites", path: "/favorites" },
-  // { label: "Markets", path: "/markets" },
-  // { label: "Portfolio", path: "/portfolio" },
+  { label: "About", path: "/about" },
+  { label: "Projects", path: "/projects" },
+  { label: "Contact", path: "/contact" },
   { label: "Settings", path: "/settings" },
 ];
 
@@ -19,7 +18,7 @@ const Sidebar: React.FC<SidebarProps & { className?: string }> = ({
   return (
     <nav className={className} aria-label='Sidebar Navigation'>
       <div className={styles.sidebarHeader}>
-        <h2 className={styles.sidebarTitle}>Menu</h2>
+        <h2 className={styles.sidebarTitle}>Navigation</h2>
         <button
           className={styles.closeButton}
           onClick={onClose}

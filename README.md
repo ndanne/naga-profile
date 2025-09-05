@@ -1,13 +1,62 @@
-stock data taken from https://stockanalysis.com/list/nasdaq-stocks/
+# Nagaraju Danne - Portfolio Website
 
-# React + TypeScript + Vite
+A modern, responsive portfolio website built with React, TypeScript, and Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+[View Portfolio](https://ndanne.github.io/naga-profile)
 
-Currently, two official plugins are available:
+## Features
+- Responsive design
+- Modern UI with smooth animations
+- Project showcase
+- Contact information and form
+- Skills and experience overview
+- Built with performance in mind
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Sass/SCSS** - Styling
+- **React Router** - Navigation
+- **GitHub Pages** - Hosting
+
+## Development
+
+### Prerequisites
+- Node.js 18 or higher
+- npm or yarn
+
+### Setup
+1. Clone the repository
+   ```bash
+   git clone https://github.com/ndanne/naga-profile.git
+   cd naga-profile
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
+
+## Deployment
+This project is automatically deployed to GitHub Pages. To deploy:
+1. Build the project: `npm run build`
+2. Deploy: `npm run deploy`
 
 ## Expanding the ESLint configuration
 

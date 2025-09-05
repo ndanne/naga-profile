@@ -1,9 +1,9 @@
 {
-  "name": "profile-app",
+  "name": "naga-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/profile-app",
+  "homepage": "https://ndanne.github.io/naga-profile",
   "engines": {
     "node": ">=18.0.0"
   },

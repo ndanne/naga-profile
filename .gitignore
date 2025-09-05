@@ -25,4 +25,5 @@ dist-ssr
 
 # TypeScript build info
 node_modules/.tmp/
+.tmp/
 *.tsbuildinfo

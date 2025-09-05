@@ -2,17 +2,18 @@
 
 ## 🚀 Automated Deployment with GitHub Actions
 
-The repository is already configured for automatic deployment to GitHub Pages using GitHub Actions.
+This portfolio website is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
 ### Requirements:
 - **Node.js 18+** (using Node.js 20 in CI)
 - **Stable versions**: React 18, React Router 6, Vite 5
-- **npm with legacy peer deps** (for compatibility)
+- **TypeScript support** for type safety
+- **Sass/SCSS** for styling
 
 ### Setup Steps:
 
 1. **Enable GitHub Pages**:
-   - Go to your repository: https://github.com/jawahar-mca/stock-app
+   - Go to your repository: https://github.com/ndanne/naga-profile
    - Click on **Settings** tab
    - Scroll down to **Pages** section (left sidebar)
    - Under **Source**, select **GitHub Actions**
@@ -20,14 +21,14 @@ The repository is already configured for automatic deployment to GitHub Pages us
 2. **Push to main branch**:
    ```bash
    git add .
-   git commit -m "Initial commit with GitHub Actions deployment"
+   git commit -m "Deploy portfolio website"
    git push origin main
    ```
 
 3. **Automatic Deployment**:
    - The workflow will automatically trigger on every push to `main`
-   - Check the deployment status at: https://github.com/jawahar-mca/stock-app/actions
-   - Once complete, your site will be live at: https://jawahar-mca.github.io/stock-app
+   - Check the deployment status at: https://github.com/ndanne/naga-profile/actions
+   - Once complete, your portfolio will be live at: https://ndanne.github.io/naga-profile
 
 ### Manual Deployment (Alternative):
 
@@ -42,10 +43,10 @@ npm run deploy
 ### Configuration Files:
 
 - **GitHub Actions**: `.github/workflows/deploy.yml`
-- **NPM Config**: `.npmrc` (handles peer dependency conflicts)
-- **Base URL**: Configured in `vite.config.ts` (only for production builds)
-- **Homepage**: Set in `package.json`
+- **Base URL**: Configured in `vite.config.ts` (for GitHub Pages)
+- **Homepage**: Set in `package.json` (https://ndanne.github.io/naga-profile)
 - **SPA Routing**: `public/404.html` + script in `index.html` for client-side routing
+- **TypeScript**: `tsconfig.json` and `tsconfig.app.json` for type checking
 
 ### Troubleshooting:
 
@@ -56,4 +57,14 @@ npm run deploy
 5. **Peer Dependency Issues**: Uses `--legacy-peer-deps` to resolve React version conflicts
 6. **Build Verification**: Workflow verifies `dist` directory exists after build
 
-That's it! Your React app will be automatically deployed to GitHub Pages on every push to main! 🎉
+That's it! Your portfolio website will be automatically deployed to GitHub Pages on every push to main! 🎉
+
+## 📝 Additional Notes:
+
+- **Portfolio Sections**: Home, About, Projects, Contact
+- **Responsive Design**: Works on desktop and mobile devices
+- **Modern Tech Stack**: React 18, TypeScript, Sass, Vite
+- **Performance Optimized**: Built with Vite for fast loading
+
+## 🔗 Live Portfolio:
+[View Portfolio](https://ndanne.github.io/naga-profile)

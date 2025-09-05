@@ -11,7 +11,7 @@ function getRepoName(): string {
   }
   
   // Fallback to default
-  return 'stock-app';
+  return 'naga-profile';
 }
 
 const isProd = process.env.NODE_ENV === 'production';

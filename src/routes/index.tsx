@@ -1,24 +1,22 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
-// import StockList from "../components/StockList";
-// import Favorites from "../components/Favorites";
+import Home from "../components/Home";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import NotFound from "../components/NotFound";
 import Settings from "../components/Settings";
-import Markets from "../components/Markets";
-import Portfolio from "../components/Portfolio";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        {/* <Route index element={<StockList />} />
-        <Route path='stocks' element={<StockList />} />
-        <Route path='favorites' element={<Favorites />} /> */}
-        <Route path='*' element={<NotFound />} />
-        {/* <Route path='home' element={<Home />} /> */}
+        <Route index element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='projects' element={<Projects />} />
+        <Route path='contact' element={<Contact />} />
         <Route path='settings' element={<Settings />} />
-        <Route path='markets' element={<Markets />} />
-        <Route path='portfolio' element={<Portfolio />} />
+        <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
   );
