@@ -1,0 +1,12 @@
+.centeredWrapper {
+  display: grid;
+  place-items: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.centeredText {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}

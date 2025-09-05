@@ -1,0 +1,49 @@
+@use './variables' as *;
+@use './colors' as *;
+@use './mixins' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $background-secondary;
+  color: $text-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+// Global button reset and base styles
+button {
+  font-family: inherit;
+}
+
+// Focus styles for accessibility
+*:focus {
+  outline: 2px solid $focus-outline;
+  outline-offset: 2px;
+}
+
+// Remove default button styles
+button:focus {
+  outline: 2px solid $focus-outline;
+  outline-offset: 2px;
+}

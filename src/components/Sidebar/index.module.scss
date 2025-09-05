@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+
+.sidebarHeader {
+  @include flex-between;
+  padding: $spacing-lg $spacing-lg $spacing-md;
+  border-bottom: 1px solid $sidebar-border;
+  margin-bottom: $spacing-md;
+}
+
+.sidebarTitle {
+  color: $sidebar-text;
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
+
+.closeButton {
+  @include button-reset;
+  @include flex-center;
+  width: 32px;
+  height: 32px;
+  color: $sidebar-text;
+  border-radius: $border-radius-sm;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: $hover-background;
+  }
+
+  &:focus {
+    outline: 2px solid $focus-outline;
+    outline-offset: 2px;
+  }
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include flex-column;
+}
+
+.navLink {
+  display: block;
+  text-decoration: none;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  padding: $spacing-md $spacing-lg;
+  transition: all $transition-fast;
+  border-radius: $border-radius-sm;
+  margin: 0 $spacing-sm;
+  border-radius: $border-radius-sm;
+  color: $sidebar-text;
+  transition: all $transition-fast;
+
+  &:hover {
+    background-color: $hover-background;
+    color: $sidebar-text-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $focus-outline;
+    outline-offset: 2px;
+  }
+}
+
+.active {
+  background-color: $success-color;
+  font-weight: 600;
+}

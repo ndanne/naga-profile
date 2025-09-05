@@ -1,0 +1,57 @@
+@use "../../styles/variables" as *;
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+
+.layout {
+  position: relative;
+  height: 100vh;
+  // overflow: hidden;
+}
+
+.backdrop {
+  @include overlay-backdrop;
+}
+
+.sidebar {
+  @include sidebar-overlay;
+  width: $sidebar-width;
+  padding: 0;
+
+  @include mobile {
+    width: $sidebar-mobile-width;
+  }
+}
+
+.main {
+  height: 100vh;
+  @include flex-column;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  @include flex-center;
+  justify-content: flex-start;
+  height: $header-height;
+  background-color: $header-background;
+  color: $header-text;
+  padding: 0 $spacing-lg;
+  position: relative;
+  z-index: $z-index-header;
+  flex-shrink: 0;
+}
+
+.mainContent {
+  flex: 1;
+  // overflow: hidden;
+  background-color: $background-light;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

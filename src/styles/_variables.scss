@@ -1,0 +1,47 @@
+@use "./colors" as *;
+
+$font-family-base: Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-xl: 24px;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+
+$spacing-unit: 8px;
+$spacing-xs: #{$spacing-unit * 0.5}; // 4px
+$spacing-sm: #{$spacing-unit}; // 8px
+$spacing-md: #{$spacing-unit * 2}; // 16px
+$spacing-lg: #{$spacing-unit * 3}; // 24px
+$spacing-xl: #{$spacing-unit * 4}; // 32px
+$spacing-xxl: #{$spacing-unit * 6}; // 48px
+
+// Layout Dimensions
+$header-height: 80px;
+$sidebar-width: 280px;
+$sidebar-mobile-width: 100vw;
+$content-max-width: 1200px;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1200px;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Z-index levels
+$z-index-backdrop: 999;
+$z-index-sidebar: 1000;
+$z-index-header: 1001;
+$z-index-modal: 1002;
